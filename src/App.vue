@@ -1,7 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { onMounted } from 'vue'
+import { request } from './composables/useApi.js'
+
+onMounted(async () => {
+  const data = await request('/ranking')
+  console.log(data)
+})
 </script>
 
 <template>
-  <HelloWorld />
+  <p>Hello world</p>
 </template>
