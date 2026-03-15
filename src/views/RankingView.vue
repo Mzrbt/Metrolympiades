@@ -1,0 +1,1 @@
+<template><p>Ranking</p></template>

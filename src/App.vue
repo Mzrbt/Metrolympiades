@@ -3,11 +3,11 @@ import { onMounted } from 'vue'
 import { request } from './composables/useApi.js'
 
 onMounted(async () => {
-  const data = await request('/ranking')
+  const data = await request('/matches')
   console.log(data)
 })
 </script>
 
 <template>
-  <p>Hello world</p>
+  <RouterView />
 </template>
