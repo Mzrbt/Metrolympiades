@@ -16,7 +16,7 @@ const routes = [
         component: LoginView
     },
     {
-        path: '/new-game',
+        path: '/games/new',
         component: NewGameView
     },
     {
